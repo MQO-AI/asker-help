@@ -6,12 +6,12 @@
     "primary": "#280071"
   },
   "logo": {
-    "light": "/brand/asker-logo-on-dark.png",
-    "dark": "/brand/asker-logo-on-light.png"
+    "light": "/brand/asker-logo-on-light.png",
+    "dark": "/brand/asker-logo-on-dark.png"
   },
   "favicon": {
-    "light": "/brand/asker-icon-on-dark.png",
-    "dark": "/brand/asker-icon-on-light.png"
+    "light": "/brand/asker-icon-on-light.png",
+    "dark": "/brand/asker-icon-on-dark.png"
   },
   "navigation": {
     "languages": [
