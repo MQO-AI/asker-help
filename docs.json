@@ -5,6 +5,14 @@
   "colors": {
     "primary": "#280071"
   },
+  "logo": {
+    "light": "/brand/asker-logo-on-dark.png",
+    "dark": "/brand/asker-logo-on-light.png"
+  },
+  "favicon": {
+    "light": "/brand/asker-icon-on-dark.png",
+    "dark": "/brand/asker-icon-on-light.png"
+  },
   "navigation": {
     "languages": [
       {
