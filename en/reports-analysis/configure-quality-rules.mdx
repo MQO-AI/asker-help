@@ -1,0 +1,22 @@
+---
+title: "Configure quality rules"
+description: "Set enabled rules, severity, and thresholds used in quality review."
+sidebarTitle: "Quality rules"
+keywords: ["QA", "rules", "severity", "threshold", "paste", "tab switch"]
+---
+
+Quality rules identify response indicators that a reviewer may need to investigate.
+
+{/* Available with */}
+{/* Let Q-bit do it */}
+
+Organisation staff responsible for data quality can configure these rules. In the main navigation, choose **QA & Cleaning** under **Data & tools** to open **QA Rules**. Rule settings are organisation-wide, so coordinate changes with the people who review flags.
+
+1. Review each rule and whether it is enabled. Available rule families cover switching away from the survey, clipboard and paste activity, heavy paste, returning and pasting, a fast long answer, and limited editing.
+2. Set the severity and any threshold offered for each enabled rule. Choose thresholds suited to the survey and investigate possible benign explanations for a flag.
+3. Choose **Save changes** to retain changes, or **Discard changes** to abandon unsaved changes.
+4. Open a survey's [QA Flags](./review-quality-flags), run QA, and inspect flagged responses with their context.
+
+The **Thresholds** include minimum text length, paste ratio and character counts, blur duration and counts, fast response time, and maximum typed characters, input events, or deletes for low editing. Times are in milliseconds. **Heavy paste ratio** accepts values from 0 to 1. Review the current saved values before changing them.
+
+For example, a rule for a fast long answer can identify a response for review when its configured condition is met. It does not determine why the response was entered quickly. Rule settings govern evaluation; a reviewer still makes the decision about a flagged response.
