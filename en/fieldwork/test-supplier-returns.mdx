@@ -1,0 +1,35 @@
+---
+title: "Test supplier entry and return destinations"
+description: "Review the link and outcome returns for a survey supplier connection before fielding."
+sidebarTitle: "Test supplier returns"
+keywords: ["supplier preview", "return URL", "outcome", "respondent ID", "screening"]
+---
+
+Supplier return testing checks a survey connection’s entry and outcome destinations before fieldwork begins. If you have access to **Third-party panels** and the survey’s **Distributions** page, use synthetic data to review the paths. First [connect the supplier](./connect-a-third-party-supplier) and agree the required URLs, incoming ID parameter, and return values with the supplier.
+
+{/* Available with */}
+{/* Let Q-bit do it */}
+
+## Check the connection
+
+1. Open the survey's **Distributions** page and find the connection under **Supplier connections**.
+2. Choose **Edit**. Confirm the supplier, connection name, interview mode, recruitment stream, and **Incoming respondent ID parameter**. Use a dedicated link or an available non-default direct link when creating the connection.
+3. Check **Output parameters for every return URL**, then expand each required outcome under **Return destinations**: **Complete**, **Screened out**, **Cleaned out**, and **Over quota**. Check each URL and its outcome-specific parameters for this survey.
+4. For each parameter, check its name and whether its value is **External respondent ID** or a **Fixed value**. The incoming ID parameter names the field on the entry link. The return parameter name can differ, but its external ID value comes from that incoming field.
+5. Choose **Save connection** after changes. If saving fails, review the reported error, correct the settings, and try again.
+6. Choose **Preview return destinations**. Review the saved connection's resolved examples for all required outcomes, including common parameters and outcome-specific overrides. They use a synthetic respondent ID and do not contact the supplier. A missing destination is shown as **No supplier return URL configured**. The editor also shows an **Example with synthetic ID** for each valid destination while you make changes.
+
+Common parameters apply to every configured destination. An outcome-specific parameter replaces a common parameter with the same name for that outcome, regardless of case. For example, an outcome-specific fixed `RID` replaces a common external-ID `rid` on that return. The other outcomes still use the common mapping unless they override it too.
+
+If the supplier sends no respondent ID, leave the incoming parameter blank. Remove or override effective external-ID mappings on every configured return URL. The connection warns if a configured return still requires an external ID. If a save error refers to a parameter, check both the URL's existing query names and the effective mappings. Supplier defaults are copied to new survey connections, and later default changes do not update existing connections. Review each connection's settings, especially for study-specific destinations or codes. Respondents who have already entered keep the routing settings saved with their response, even after the connection is edited.
+
+## Test the respondent paths
+
+1. Choose **Preview connection** and use synthetic answers to follow the survey.
+2. Repeat with answers that exercise the applicable completion, screening, and clean-out paths. A preview shows a resolved return destination without opening it. Arrange a safe test of the automatic full-quota exit in a test study.
+3. Compare each result with the supplier's agreed destination and values. Correct the connection or survey routing and test again if needed.
+4. Before distributing the entry link, make sure the survey version is published, the connection is active, and the survey's **Distribution status** is **Live**.
+
+An action can use **Originating supplier** to return a respondent through their entry connection. A named connection is intended for respondents from that connection. If an outcome has no configured supplier return URL, the respondent sees a default exit message. For custom redirects and conditions, see [Screen and route survey respondents](./screen-and-route-respondents).
+
+After responses exist, the connection's interview mode, recruitment stream, and incoming ID parameter are fixed. If a connection has responses, deactivate it rather than removing it. Contact the supplier to resolve an incorrect agreed URL or parameter before fielding.

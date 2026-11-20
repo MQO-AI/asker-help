@@ -1,0 +1,26 @@
+---
+title: Understand open-end quality thresholds
+description: Set organisation-wide thresholds and severities for open-end response flags.
+sidebarTitle: Quality thresholds
+keywords: [quality, QA, open-end, thresholds, flags]
+---
+
+Open-end quality thresholds set when enabled rules flag written responses for closer review.
+
+{/* Available with */}
+{/* Let Q-bit do it */}
+
+Organisation users with access to quality settings can configure these signals. A flag is a prompt to review, not a conclusion about a respondent. For example, a fast long-answer signal calls for checking the response and context before making a decision.
+
+Open **QA & Cleaning**. Review the values currently saved for your organisation before changing them. In **Rules**, turn each signal on or off and select **Soft**, **Medium**, or **Hard** severity. Adjust the related values under **Thresholds**, then select **Save changes**. Select **Discard changes** to return to the last saved values before saving.
+
+## Thresholds and dependencies
+
+- **Min text length** sets the minimum answer length for text-based rules.
+- **Heavy paste ratio** is the pasted share of the answer, from 0 to 1. **Heavy paste min chars** sets the minimum pasted characters for the paste-heavy rule. For example, a ratio of 0.85 means 85% of the answer, alongside the minimum character requirement.
+- **Blur threshold (ms)** sets the minimum time away from the window. **Soft blur count** and **Hard blur count** set the respective counts; **Blur + paste min chars** sets the pasted characters required after a blur.
+- **Fast response (ms)** sets the maximum active response time used by the fast-long rule.
+- The **Low editing** fields set the minimum pasted characters and maximum typed characters, input events, and deletes used by that rule.
+- **Copy/paste min count** sets the minimum combined copy and paste count.
+
+An enabled rule needs its relevant conditions to be met before it can flag an answer. The saved severity helps reviewers prioritise a flag. Discuss changes with your team because these settings are organisation-wide. For the related workflow, see [Configure quality rules](../reports-analysis/configure-quality-rules), then [review flagged responses](../reports-analysis/review-quality-flags) in context. If saving fails, keep the page open, check the error, and retry after resolving it.

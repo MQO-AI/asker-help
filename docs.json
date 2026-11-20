@@ -5,6 +5,14 @@
   "colors": {
     "primary": "#280071"
   },
+  "logo": {
+    "light": "/brand/asker-logo-on-light.png",
+    "dark": "/brand/asker-logo-on-dark.png"
+  },
+  "favicon": {
+    "light": "/brand/asker-icon-on-light.png",
+    "dark": "/brand/asker-icon-on-dark.png"
+  },
   "navigation": {
     "languages": [
       {
@@ -12,7 +20,314 @@
         "groups": [
           {
             "group": "Get started",
-            "pages": ["en/index"]
+            "pages": [
+              "en/index",
+              "en/get-started/sign-in",
+              "en/get-started/find-work-and-navigate",
+              "en/get-started/use-q-bit-on-the-current-screen",
+              "en/get-started/create-a-setup-with-qbit",
+              "en/get-started/understand-access-and-permissions",
+              "en/get-started/projects-and-session-groups",
+              "en/get-started/recover-your-session",
+              "en/get-started/resolve-unavailable-access",
+              "en/get-started/archive-and-restore-work"
+            ]
+          },
+          {
+            "group": "Surveys",
+            "pages": [
+              {
+                "group": "Build and publish",
+                "pages": [
+                  "en/surveys/start-a-survey",
+                  "en/surveys/create-and-find-a-survey",
+                  "en/surveys/organise-pages-and-flow",
+                  "en/surveys/add-and-edit-questions",
+                  "en/surveys/add-content-and-media",
+                  "en/surveys/survey-appearance-and-navigation",
+                  "en/surveys/save-and-collaborate",
+                  "en/surveys/preview-and-test",
+                  "en/surveys/publish-a-version"
+                ]
+              },
+              {
+                "group": "Advanced survey setup",
+                "pages": [
+                  "en/surveys/display-logic-and-page-actions",
+                  "en/surveys/pipe-answers-and-choices",
+                  "en/surveys/hidden-and-computed-variables",
+                  "en/surveys/tracking-sets-in-questions",
+                  "en/surveys/translate-a-survey",
+                  "en/surveys/draft-a-survey-with-q-bit",
+                  "en/surveys/review-q-bit-survey-changes",
+                  "en/surveys/reuse-survey-setups",
+                  "en/surveys/stage-quotas-and-weights",
+                  "en/surveys/set-up-quota-assignment-groups"
+                ]
+              },
+              {
+                "group": "Question types",
+                "pages": [
+                  "en/surveys/choice-questions",
+                  "en/surveys/written-answer-questions",
+                  "en/surveys/numeric-entry",
+                  "en/surveys/scale-questions",
+                  "en/surveys/nps-questions",
+                  "en/surveys/slider-questions",
+                  "en/surveys/slider-lists",
+                  "en/surveys/grid-questions",
+                  "en/surveys/ranking-questions",
+                  "en/surveys/semantic-differential",
+                  "en/surveys/continuous-sum",
+                  "en/surveys/hybrid-entry-list",
+                  "en/surveys/bot-check",
+                  "en/surveys/ai-follow-up",
+                  "en/surveys/maxdiff-questions",
+                  "en/surveys/conjoint-questions",
+                  "en/surveys/record-collections",
+                  "en/surveys/record-collection-filters-and-checks"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Fieldwork",
+            "pages": [
+              {
+                "group": "Open and manage responses",
+                "pages": [
+                  "en/fieldwork/activate-distribution",
+                  "en/fieldwork/manage-direct-links",
+                  "en/fieldwork/screen-and-route-respondents",
+                  "en/fieldwork/set-and-monitor-quotas",
+                  "en/fieldwork/understand-quota-counts",
+                  "en/fieldwork/share-quota-progress",
+                  "en/fieldwork/read-shared-quota-progress"
+                ]
+              },
+              {
+                "group": "Invite contacts",
+                "pages": [
+                  "en/fieldwork/prepare-contacts-and-sample",
+                  "en/fieldwork/create-a-campaign",
+                  "en/fieldwork/design-campaign-emails",
+                  "en/fieldwork/schedule-and-send-a-campaign",
+                  "en/fieldwork/send-targeted-reminders"
+                ]
+              },
+              {
+                "group": "Supplier traffic",
+                "pages": [
+                  "en/fieldwork/connect-a-third-party-supplier",
+                  "en/fieldwork/test-supplier-returns"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Reports and analysis",
+            "pages": [
+              {
+                "group": "Responses and quality",
+                "pages": [
+                  "en/reports-analysis/monitor-fieldwork",
+                  "en/reports-analysis/review-survey-responses",
+                  "en/reports-analysis/configure-quality-rules",
+                  "en/reports-analysis/review-quality-flags",
+                  "en/reports-analysis/export-responses"
+                ]
+              },
+              {
+                "group": "Standard reports",
+                "pages": [
+                  "en/reports-analysis/create-standard-report",
+                  "en/reports-analysis/standard-report-chart-types",
+                  "en/reports-analysis/choose-and-download-report-charts",
+                  "en/reports-analysis/filter-compare-and-weight",
+                  "en/reports-analysis/manage-weighting-schemes",
+                  "en/reports-analysis/curate-word-clouds",
+                  "en/reports-analysis/share-standard-report"
+                ]
+              },
+              {
+                "group": "Q-bit analysis and coding",
+                "pages": [
+                  "en/reports-analysis/start-qbit-analysis",
+                  "en/reports-analysis/ask-qbit-about-data",
+                  "en/reports-analysis/review-qbit-outputs",
+                  "en/reports-analysis/manage-qbit-conversations",
+                  "en/reports-analysis/share-qbit-findings",
+                  "en/reports-analysis/code-written-answers-qbit",
+                  "en/reports-analysis/send-to-content-coder"
+                ]
+              },
+              {
+                "group": "Specialist analysis",
+                "pages": [
+                  "en/reports-analysis/read-record-collection-summaries",
+                  "en/reports-analysis/interpret-experiment-results",
+                  "en/reports-analysis/use-conjoint-simulator"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Registration",
+            "pages": [
+              {
+                "group": "Build a registration",
+                "pages": [
+                  "en/registration/create-and-find-a-registration",
+                  "en/registration/navigate-registration-workspace",
+                  "en/registration/create-and-manage-sessions",
+                  "en/registration/write-and-style-the-form",
+                  "en/registration/configure-registration-fields",
+                  "en/registration/add-optional-survey-questions",
+                  "en/registration/set-privacy-and-consent",
+                  "en/registration/control-capacity-and-closing",
+                  "en/registration/configure-waitlists-and-offers",
+                  "en/registration/translate-and-publish-content",
+                  "en/registration/open-and-share-registration"
+                ]
+              },
+              {
+                "group": "Manage people and attendance",
+                "pages": [
+                  "en/registration/review-recruitment-interest",
+                  "en/registration/add-or-import-registrants",
+                  "en/registration/manage-registrants-and-waitlists",
+                  "en/registration/request-additional-information",
+                  "en/registration/check-in-attendees",
+                  "en/registration/register-a-walk-in",
+                  "en/registration/manage-roster-export-access",
+                  "en/participant-help/registration/access-assigned-registrations"
+                ]
+              },
+              {
+                "group": "Messages and reports",
+                "pages": [
+                  "en/registration/manage-registration-email-templates",
+                  "en/registration/schedule-registration-reminders",
+                  "en/registration/send-a-one-time-message",
+                  "en/registration/send-session-feedback",
+                  "en/registration/share-registration-reports"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Bulletin Boards",
+            "pages": [
+              {
+                "group": "Build the study",
+                "pages": [
+                  "en/sessions/bulletin-boards/create-a-bulletin-board",
+                  "en/sessions/bulletin-boards/build-the-study-flow",
+                  "en/sessions/bulletin-boards/add-questions-and-content",
+                  "en/sessions/bulletin-boards/import-and-preview-a-flow"
+                ]
+              },
+              {
+                "group": "Invite people and run the study",
+                "pages": [
+                  "en/sessions/bulletin-boards/set-contact-requirements",
+                  "en/sessions/bulletin-boards/manage-study-people",
+                  "en/sessions/bulletin-boards/manage-observer-access",
+                  "en/sessions/bulletin-boards/review-a-study-as-an-observer",
+                  "en/sessions/bulletin-boards/publish-open-and-close",
+                  "en/sessions/bulletin-boards/send-study-email",
+                  "en/sessions/bulletin-boards/schedule-automatic-email-reminders",
+                  "en/sessions/bulletin-boards/monitor-participation"
+                ]
+              },
+              {
+                "group": "Discussion and results",
+                "pages": [
+                  "en/sessions/bulletin-boards/curate-and-moderate-discussion",
+                  "en/sessions/bulletin-boards/snapshot-and-export-study-data"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Focus Groups",
+            "pages": [
+              {
+                "group": "Prepare",
+                "pages": [
+                  "en/sessions/focus-groups/create-a-session-group",
+                  "en/sessions/focus-groups/navigate-a-focus-group",
+                  "en/sessions/focus-groups/set-shared-defaults",
+                  "en/sessions/focus-groups/schedule-a-focus-group",
+                  "en/sessions/focus-groups/assign-people",
+                  "en/sessions/focus-groups/configure-participant-arrival",
+                  "en/sessions/focus-groups/prepare-guide-and-materials",
+                  "en/sessions/focus-groups/send-invitations"
+                ]
+              },
+              {
+                "group": "Room",
+                "pages": [
+                  "en/sessions/focus-groups/practise-as-moderator",
+                  "en/sessions/focus-groups/moderate-a-focus-group",
+                  "en/sessions/focus-groups/record-a-focus-group"
+                ]
+              },
+              {
+                "group": "Results",
+                "pages": [
+                  "en/sessions/focus-groups/review-attendance",
+                  "en/sessions/focus-groups/review-recordings",
+                  "en/sessions/focus-groups/share-a-recording"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Administration",
+            "pages": [
+              "en/administration/manage-tracking-sets",
+              "en/administration/manage-translation-preferences",
+              "en/administration/open-end-quality-thresholds"
+            ]
+          },
+          {
+            "group": "Participant help",
+            "pages": [
+              {
+                "group": "Surveys",
+                "pages": [
+                  "en/participant-help/take-and-resume-a-survey",
+                  "en/participant-help/survey-guidance-and-keyboard",
+                  "en/participant-help/survey-link-and-save-help"
+                ]
+              },
+              {
+                "group": "Bulletin Boards",
+                "pages": [
+                  "en/sessions/bulletin-boards/participate-in-a-study",
+                  "en/sessions/bulletin-boards/participate-in-discussion",
+                  "en/participant-help/bulletin-boards/notifications-and-text-contact"
+                ]
+              },
+              {
+                "group": "Focus Groups",
+                "pages": [
+                  "en/participant-help/focus-groups/join-a-focus-group",
+                  "en/participant-help/focus-groups/fix-joining-and-devices",
+                  "en/participant-help/focus-groups/observe-a-focus-group",
+                  "en/participant-help/focus-groups/open-a-shared-recording"
+                ]
+              },
+              {
+                "group": "Registration",
+                "pages": [
+                  "en/registration/register-for-a-session",
+                  "en/registration/cancel-or-answer-an-offer",
+                  "en/participant-help/registration/answer-an-information-request"
+                ]
+              }
+            ]
           }
         ]
       }
