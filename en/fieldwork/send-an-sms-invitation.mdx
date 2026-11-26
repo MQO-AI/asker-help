@@ -1,0 +1,31 @@
+---
+title: "Send a campaign invitation by SMS"
+description: "Open the SMS workflow from a campaign and choose which contacts to invite."
+sidebarTitle: "Send an SMS invitation"
+keywords: ["sms", "campaign", "invitation", "contacts", "recipients"]
+---
+
+A campaign SMS invitation sends recipients a survey link by text message. When SMS is available and activated for your organization, you can send invitations by SMS before configuring any campaign email.
+
+{/* Available with */}
+{/* Let Q-bit do it */}
+
+## Before you send
+
+Publish the survey, make its distribution **Live**, and check that the campaign link is open. Your organization needs a configured SMS sending number. Under **Sample / recipients**, use **SMS permission** to record each recipient’s confirmed phone number, SMS language, and consent reference.
+
+## Choose recipients, review, and send
+
+1. In your campaign, open **Send** and select **Choose recipients for SMS**. This shortcut opens **Sample / recipients** for the same campaign. The message about adding an invitation on the **Emails** tab applies to email.
+
+   <img src="/images/review/campaign-sms-send-shortcut-desktop.png" alt={"The campaign Send tab shows the Choose recipients for SMS button."} width={568} />
+
+2. Select the intended recipients and open **Survey texts**.
+
+   <img src="/images/review/campaign-sms-recipient-toolbar-desktop.png" alt={"The Sample / recipients tab shows Survey texts beside the reminder and sample controls."} width={760} />
+
+3. Choose **Invitation**, the message language, and a **Sending number**. Enter your **Message**. Include `{{survey_link}}` exactly once, with spaces or a line break separating it from other text. Keep punctuation away from the placeholder.
+4. Select **Review texts**. Review the messages and check the sender, survey link, opt-out instruction, and eligible recipient count. Check the reasons for any exclusions, such as missing permission, an opted-out number, or a language mismatch.
+5. Select the send button with the eligible count, such as **Send 1 text**, to queue the messages. Check **Recent SMS delivery status** to follow delivery.
+
+For a follow-up text, choose **Reminder** in **Survey texts**. Reminders require individual survey links. See [Schedule and send a campaign](./schedule-and-send-a-campaign) for email.
