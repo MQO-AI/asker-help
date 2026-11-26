@@ -38,17 +38,30 @@ These examples all fit a survey about community services.
 <img src="/images/review/respondent-validation-error-en-phone.png" alt={"A phone survey shows the required-answer alert and highlights the required choice question before the respondent can continue."} width={390} />
 
 1. Open **Survey Builder** and find the page. If the survey has no pages, select **Add First Page**.
-2. Select **+ Add item to page**.
-3. Choose a question type. To reuse an available question, choose **Add from Question Bank**. The question editor opens.
+2. Select **+ Add item to page**. The picker groups items under **Media & Text**, **Standard Questions**, **Special Questions**, **Experiments**, and **Programming**.
+
+   <img src="/images/review/survey-builder-grouped-picker-desktop.png" alt={"The grouped picker shows Question Bank and AI Follow-Up above Media & Text and Standard Questions."} width={760} />
+
+3. Choose an item from the appropriate group. For a first survey, choose **Single Select** under **Standard Questions**. The item editor opens.
 4. Enter the wording in **Question text** and add any guidance.
 5. Set **Required** where offered, then configure the choices or type-specific settings.
 6. Review the **Question key** used to identify the question. If you enter a key, use at most 64 characters, starting with a letter or underscore. Use letters, digits, underscores, or periods, and do not end with a period. Keys must be unique across the survey, including removed questions and questions on removed pages, regardless of case. Reserved words are not accepted. If a key is already in use, choose another. The editor reports invalid keys.
-7. Select **Save** in the question editor. The question is applied to the working draft.
+7. Select **Save** in the question editor to add the new question to the working draft. Until you select it, **Save Draft** and autosave save the rest of the draft without the new question.
 8. Select **Save Draft** in the builder. Wait for **Draft Saved** or the saved status. Preview the question where available, and use a [full respondent test](./preview-and-test) for Record Collections.
 
-For a first example, choose **Single select**, enter a question, and use **Paste list** under **Response options** to enter one choice per line. Choose **Replace list** to replace existing choices, then select **Insert items**. Check the labels and distinct values before saving. See [start a survey](./start-a-survey) for a worked example.
+For a first example, choose **Single Select**, enter a question, and use **Paste list** under **Response options** to enter one choice per line. Choose **Replace list** to replace existing choices, then select **Insert items**. Check the labels and distinct values before saving. See [start a survey](./start-a-survey) for a worked example.
+
+For instructions or other media, choose an item under **Media & Text**. See [add content and media](./add-content-and-media). When available in your workspace, **Question Bank** and **AI Follow-Up** appear at the top of the picker. Use them to insert a copy of a saved question or start a [follow-up based on earlier answers](./ai-follow-up). **Audio** and **Video** appear under **Media & Text** when available. See [reuse a saved question](./reuse-survey-setups#use-the-question-bank).
 
 The question card provides **Edit**, **Clone**, and **Remove**, plus **Preview** and **Save to bank** where available. Drag an item to rearrange it or, where allowed, move it between pages. Some specialised question types have placement restrictions. In **Recycle bin**, select **View**, then **Restore** beside a removed question when needed.
+
+## Cancel a new item
+
+If you start a new item and decide against adding it, select **Cancel** in the editor before selecting **Save**. The editor closes immediately, the item is discarded without a Recycle bin entry, and the existing items stay as they were.
+
+If the builder asks you to finish the open item before adding, moving, cloning, or removing items on that page, select **Save** or **Cancel** in its editor and then retry. You can keep working on other pages.
+
+Selecting **Insert** in the **Question Bank** adds the saved copy immediately. **Cancel** in the editor leaves that copy on the page. If you change your mind about keeping the copy, choose **Remove** on its card.
 
 ## Before changing a question type
 
