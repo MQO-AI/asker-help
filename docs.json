@@ -43,7 +43,6 @@
                   "en/surveys/create-and-find-a-survey",
                   "en/surveys/organise-pages-and-flow",
                   "en/surveys/add-and-edit-questions",
-                  "en/surveys/add-content-and-media",
                   "en/surveys/survey-appearance-and-navigation",
                   "en/surveys/save-and-collaborate",
                   "en/surveys/preview-and-test",
@@ -68,6 +67,7 @@
               {
                 "group": "Question types",
                 "pages": [
+                  "en/surveys/add-content-and-media",
                   "en/surveys/choice-questions",
                   "en/surveys/written-answer-questions",
                   "en/surveys/numeric-entry",
