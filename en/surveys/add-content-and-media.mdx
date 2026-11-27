@@ -1,7 +1,7 @@
 ---
 title: "Add text, images, audio, and video"
 description: "Add display content and configure media playback behaviour."
-sidebarTitle: "Content and media"
+sidebarTitle: "Audio, video, and other content"
 keywords: ["content","image","audio","video","media"]
 ---
 
@@ -13,6 +13,68 @@ Add content blocks to give respondents context or media before they answer, with
 ## When to use it
 
 Use text for instructions, an image when a visual is needed to answer, and audio or video when respondents should hear or watch material. For example, place a short audio clip before a question about what the respondent heard. Open **+ Add item to page** and choose the block under **Media & Text**. Position the block where the information is needed.
+
+## Audio and video
+
+1. On the page where the clip belongs, select **+ Add item to page** and choose **Audio** or **Video** under **Media & Text**, if available in your workspace.
+2. Choose a file. Wait for **Ready**. Add optional text above the player, a title, and a caption to tell respondents what they’re about to hear or watch.
+3. Choose **Advancing behaviour**.
+   - **None** leaves the rest of the page and **Next** available during playback.
+   - **Page reveal** hides the elements below the clip and withholds **Next** until playback completes.
+   - **Page advance** shows the rest of the page and withholds **Next** until playback completes.
+4. Select **Save**, then **Save Draft**. Use [Preview](./preview-and-test) to check playback and the behaviour before and after the clip ends. Repeat on desktop and phone before publishing.
+
+If upload or processing fails, check the message and choose the file again. If respondents should answer a question about the clip, add that question as a separate item after the media block.
+
+## Audio example
+
+In the Community Spaces survey, add an Audio block titled **Library welcome message**. Choose **Page reveal** so respondents hear the message before they see the follow-up question.
+
+<Tabs>
+  <Tab title="Editor">
+
+    <img src="/images/review/survey-audio-editor-en-desktop.png" alt={"The Audio editor shows Library welcome message, Page reveal selected, and Audio uploaded and ready."} width={720} />
+
+  </Tab>
+  <Tab title="Desktop">
+
+    <img src="/images/review/survey-audio-respondent-en-desktop.png" alt={"The desktop survey shows the welcome audio player and asks respondents to finish playing it before continuing."} width={720} />
+
+  </Tab>
+  <Tab title="Phone">
+
+    **Before playback**
+
+    <img src="/images/review/survey-audio-respondent-en-phone.png" alt={"The phone survey shows the welcome audio player. The follow-up question and Next are hidden."} width={358} />
+
+    **After playback**
+
+    <img src="/images/review/survey-audio-revealed-en-phone.png" alt={"After the welcome audio ends, the phone survey shows the follow-up question and Next."} width={358} />
+
+  </Tab>
+</Tabs>
+
+## Video example
+
+Add a Video block titled **Reading room walkthrough**. Choose **Page advance** so respondents can read the follow-up question while watching. **Next** becomes available after the video ends.
+
+<Tabs>
+  <Tab title="Editor">
+
+    <img src="/images/review/survey-video-editor-en-desktop.png" alt={"The Video editor shows Reading room walkthrough, Page advance selected, and Video uploaded and ready."} width={720} />
+
+  </Tab>
+  <Tab title="Desktop">
+
+    <img src="/images/review/survey-video-respondent-en-desktop.png" alt={"The desktop survey shows the reading room video and its follow-up question. Next is hidden until playback ends."} width={720} />
+
+  </Tab>
+  <Tab title="Phone">
+
+    <img src="/images/review/survey-video-respondent-en-phone.png" alt={"The phone survey shows the reading room video above the follow-up question and asks respondents to finish playing the video to continue."} width={358} />
+
+  </Tab>
+</Tabs>
 
 ## Try adding instructions
 
@@ -28,18 +90,6 @@ If the instructions appear after the question, move the block above it in the bu
 
 A text block provides rich text for instructions or context. For an image block, enter an **Image URL** or use **Upload image**. Add **Alt text** that describes the image's purpose, unless it is purely decorative. You can add a **Caption** and adjust **Scale**, which starts at 100%.
 
-## Audio and video
-
-If **Audio** or **Video** is available in your workspace, choose it under **Media & Text** and select a file. Wait for it to show **Ready** before testing. Add optional text above the player, a title, and a caption.
-
-Choose **Advancing behaviour**:
-
-- **None** leaves subsequent content and navigation available without a playback gate.
-- **Page reveal** hides following elements on the page and holds **Next** until playback completes.
-- **Page advance** holds **Next** until playback completes.
-
-Test playback and the chosen behaviour on desktop and phone. If upload or processing fails, read the error and try a suitable file again. Save the draft after the media is ready.
-
-For the audio example, use **Page reveal** if the following question should appear after playback, or **Page advance** if respondents should wait before continuing. Check that the chosen behaviour works with the rest of the page.
+## HTML blocks
 
 An HTML block accepts HTML and a height setting. Check that its content works within the embedded frame and remains usable on a narrow screen.
